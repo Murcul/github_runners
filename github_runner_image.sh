@@ -18,6 +18,9 @@ sudo usermod -aG docker gitstart
 # Install git
 sudo apt-get install git-all
 
+# Install unzip - the default ubuntu image needs it
+sudo apt-get install unzip
+
 # Install apt tools
 sudo apt-get install -y acl=2.3.1-1 \
 aria2=1.36.0-1 \
