@@ -16,10 +16,10 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 sudo usermod -aG docker gitstart
 
 # Install git
-sudo apt-get install git-all
+sudo apt-get install -y git-all
 
 # Install unzip - the default ubuntu image needs it
-sudo apt-get install unzip
+sudo apt-get install -y unzip
 
 # Install apt tools
 sudo apt-get install -y acl=2.3.1-1 \
@@ -110,7 +110,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 18.16.0
 
 # Add postgresQL client
-sudo apt install postgresql-client-common postgresql-client-14
+sudo apt install -y postgresql-client-common postgresql-client-14
 
 # Deno imports are cached in $DENO_DIR=/home/runner/ in our workflow, giving wx access
 sudo setfacl -Rdm u:gitstart:rwx /home/
