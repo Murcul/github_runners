@@ -8,12 +8,15 @@ echo \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# Update apt package and isntall docker
+# Update apt package and install docker
 sudo apt update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Add murcul user to docker group (necessary to run command without using `sudo`)
 sudo usermod -aG docker gitstart
+
+# Add crontab to prune all unused docker containers, images, networks and volumes every hour (otherwise the disk space will be full in a few days)
+(echo '0 * * * * docker system prune -af --volumes') | crontab
 
 # Install git
 sudo apt-get install -y git-all
