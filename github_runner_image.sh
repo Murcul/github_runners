@@ -69,6 +69,7 @@ libxss1=1:1.2.3-1build2 \
 libyaml-dev=0.2.2-1build2 \
 locales=2.35-0ubuntu3.1 \
 lz4=1.9.3-2build2 \
+make=4.3-4.1build1 \
 m4=1.4.18-5ubuntu2 \
 mediainfo=22.03-1 \
 mercurial=6.1.1-1ubuntu1 \
