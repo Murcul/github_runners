@@ -32,6 +32,7 @@ automake=1:1.16.5-1.3 \
 binutils=2.38-4ubuntu2.2 \
 bison=2:3.8.2+dfsg-1build1 \
 brotli=1.0.9-2build6 \
+build-essential=12.9ubuntu3 \
 coreutils=8.32-4.1ubuntu1 \
 dbus=1.12.20-2ubuntu4.1 \
 dnsutils=1:9.18.12-0ubuntu0.22.04.1 \
